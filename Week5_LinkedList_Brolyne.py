@@ -5,7 +5,7 @@ class Node:
         self.data = data
         self.next = None
 
-class LinkedList:
+class SinglyLinkedList:
     def __init__(self):
         self.head = None
 
@@ -97,7 +97,7 @@ def size(self):
 #EXAMPLES
 # append(data) - Insert at the end(example: 10->20->30, append(40) -> 10->20->30->40)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -108,7 +108,7 @@ my_list.display()  # Output: 5 10 20 30 None
 
 # prepend(data) - Insert at the beginning(example: 10->20->30, prepend(5) -> 5->10->20->30)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -119,7 +119,7 @@ my_list.display()  # Output: 5 10 20 30 None
 
 # insert_at_position(data, position) - Insert at a specific position(example: 10->20->30, insert_at_position(15, 1) -> 10->15->20->30)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -131,7 +131,7 @@ my_list.display()  # Output: 5 15 10 20 30 None
 
 # delete_by_value(value) - Delete a node by value(example: 10->20->30, delete_by_value(20) -> 10->30)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -143,7 +143,7 @@ my_list.display()  # Output: 5 10 30 None
 
 # search(value) - Search for a value in the list(example: 10->20->30, search(20) -> True, search(40) -> False
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -155,7 +155,7 @@ print(my_list.search(40))  # Output: False
 
 # display() - Print all elements in the list(example: 10->20->30, display() -> 10 20 30 None)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     my_list.head = Node(10)
     my_list.head.next = Node(20)
     my_list.head.next.next = Node(30)
@@ -166,7 +166,7 @@ my_list.display()  # Output: 5 10 20 30 None
 
 # is_empty() - Check if the list is empty(example: empty list, is_empty() -> True, non-empty list, is_empty() -> False)
 def create_list():
-    my_list = LinkedList()
+    my_list = SinglyLinkedList()
     return my_list
 my_list = create_list() # Output: None
 print(my_list.is_empty())  # Output: True
@@ -174,6 +174,7 @@ my_list.head = Node(10)
 print(my_list.is_empty())  # Output: False
 
 #size() - Return the number of nodes in the list(example: 10->20->30, size() -> 3)
+print(my_list.size())  # Output: 1
 
 
 
